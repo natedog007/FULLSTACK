@@ -16,7 +16,7 @@ while (choice != "quit"){
     }
     else if(choice == "delete"){
         let deleteItem = parseInt(prompt("What would you like to delete?"));
-        ToDoList.pop(deleteItem);
+        ToDoList.splice(deleteItem, 1);
         console.log("To-Do Removed");
     }
     else if(choice == "quit"){
